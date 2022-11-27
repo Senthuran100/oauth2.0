@@ -1,9 +1,12 @@
 {
+  "homepage": "http://senthuran100.github.io/OAuth-Github",
   "name": "login-with-github",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://github.com/login/oauth/access_token",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"cd server && nodemon index.js \" \"react-scripts start\" ",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "joi": "^17.2.1"
   }
 }
