@@ -1,6 +1,6 @@
 {
   "homepage": "http://senthuran100.github.io/oauth2.0",
-  "name": "OAuth-Github",
+  "name": "oauth2.0",
   "version": "0.1.0",
   "private": true,
   "scripts": {
