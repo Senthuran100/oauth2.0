@@ -1,9 +1,8 @@
 {
   "homepage": "http://senthuran100.github.io/OAuth-Github",
-  "name": "login-with-github",
+  "name": "OAuth-Github",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://github.com/login/oauth/access_token",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
