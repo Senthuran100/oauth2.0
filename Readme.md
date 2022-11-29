@@ -40,6 +40,20 @@ Using OAuth 2.0, access requests are initiated by the Client, e.g., a mobile app
 
 In OAuth 2.0, grants are the set of steps a Client has to perform to get resource access authorization.
 
+##### Client Credentials Grant Flow
+
+![Client Credentials Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Client_Credentials.gif)
+
+##### Resource Owner Password Credentials Grant Flow.
+
+![Resource Owner Password Credentials Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Password_Grant.gif)
+
 ##### Authorization Code Grant Flow.
 
 ![Authorization Code Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Authorization_Code.gif)
+
+##### Implicit Grant Flow
+
+![Implicit Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Implicit_Flow.gif)
+
+
