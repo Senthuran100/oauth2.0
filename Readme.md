@@ -36,3 +36,6 @@ Using OAuth 2.0, access requests are initiated by the Client, e.g., a mobile app
 4. The Authorization server redirects back to the Client with either an Authorization Code or Access Token, depending on the grant type, as it will be explained in the next section. A Refresh Token may also be returned.
 5. With the Access Token, the Client requests access to the resource from the Resource server.
 
+### Grant Types in OAuth 2.0
+
+In OAuth 2.0, grants are the set of steps a Client has to perform to get resource access authorization.
