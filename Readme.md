@@ -39,3 +39,7 @@ Using OAuth 2.0, access requests are initiated by the Client, e.g., a mobile app
 ### Grant Types in OAuth 2.0
 
 In OAuth 2.0, grants are the set of steps a Client has to perform to get resource access authorization.
+
+##### Authorization Code Grant Flow.
+
+![Authorization Code Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Authorization_Code.gif)
