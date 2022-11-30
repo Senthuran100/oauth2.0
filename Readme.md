@@ -41,10 +41,18 @@ Using OAuth 2.0, access requests are initiated by the Client, e.g., a mobile app
 In OAuth 2.0, grants are the set of steps a Client has to perform to get resource access authorization.
 
 ##### Client Credentials Grant Flow
+The client credentials grant provides a specific grant flow in which the resource owner is not involved. 
+
+When using this grant, the client application requests an access token only with its own credentials (the identifier and secret) or an assertion, and uses the access token on behalf of the client application itself. 
+
+This grant flow is best-suited when a service provider wants to provide some API methods that are to be used by the client application in general, instead of methods that apply to a certain resource owner, for example, API methods for maintenance. 
+
+This way of using an API is also referred to as userless access.
 
 ![Client Credentials Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Client_Credentials.gif)
 
 ##### Resource Owner Password Credentials Grant Flow.
+
 
 ![Resource Owner Password Credentials Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Password_Grant.gif)
 
