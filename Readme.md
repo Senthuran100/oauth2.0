@@ -52,7 +52,11 @@ This way of using an API is also referred to as userless access.
 ![Client Credentials Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Client_Credentials.gif)
 
 ##### Resource Owner Password Credentials Grant Flow.
+The Resource Owner Password Credentials flow allows exchanging the username and password of a user for an access token.
 
+The resource owner password credentials grant type is suitable in cases where the resource owner has a trust relationship with the client.
+
+The user’s password is accessible to the application so this requires strong trust of the application by the user.
 
 ![Resource Owner Password Credentials Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Password_Grant.gif)
 
