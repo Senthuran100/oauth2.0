@@ -62,9 +62,19 @@ The user’s password is accessible to the application so this requires strong t
 
 ##### Authorization Code Grant Flow.
 
+The authorization code grant is used when an application exchanges an authorization code for an access token.
+
+After the user returns to the application via the redirect URL, the application will get the authorization code from the URL and use it to request an access token.
+
 ![Authorization Code Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Authorization_Code.gif)
 
 ##### Implicit Grant Flow
+The Implicit Grant Type is a way for a single-page JavaScript app to get an access token without an intermediate code exchange step.
+
+It was originally created for use by JavaScript apps (which don’t have a way to safely store secrets) but is only recommended in specific situations.
+
+In the Implicit Grant flow, your integration requests an access token directly. This is potentially less secure because the access token must be stored on the user’s device, but it does not require that the integration have access to a web server.
+
 
 ![Implicit Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Implicit_Flow.gif)
 
