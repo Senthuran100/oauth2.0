@@ -78,4 +78,27 @@ In the Implicit Grant flow, your integration requests an access token directly. 
 
 ![Implicit Grant Flow](https://github.com/Senthuran100/oauth2.0/blob/main/gif/Implicit_Flow.gif)
 
+#### When to use which grant type
+
+**Is the Client the Resource Owner?**
+
+The first decision point is about whether the party that requires access to resources is a machine. In the case of machine-to-machine authorization, the Client is also the Resource Owner, so no end-user authorization is needed.
+
+Eg:- A cron job that uses an API to import information to a database.
+In this example, the cron job is the Client and the Resource Owner since it holds the Client ID and Client Secret and uses them to get an Access Token from the Authorization Server.
+
+In this case **Client Credential Flow** is most appropriate.
+
+**Is the Client absolutely trusted with user credentials ?**
+
+This decision point may result in the Resource Owner Password Credentials Grant. 
+
+In this flow, the end-user is asked to fill in credentials (username/password), typically using an interactive form. This information is sent to the backend and from there to Authorization server. 
+
+It is therefore imperative that the Client is absolutely trusted with this information.
+
+**Is the Client a web app executing on the server?**
+
+
+
 
