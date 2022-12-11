@@ -91,13 +91,19 @@ In this case **Client Credential Flow** is most appropriate.
 
 **Is the Client absolutely trusted with user credentials ?**
 
-This decision point may result in the Resource Owner Password Credentials Grant. 
+This decision point may result in the **Resource Owner Password Credentials Grant**. 
 
 In this flow, the end-user is asked to fill in credentials (username/password), typically using an interactive form. This information is sent to the backend and from there to Authorization server. 
 
 It is therefore imperative that the Client is absolutely trusted with this information.
 
 **Is the Client a web app executing on the server?**
+
+If the Client is a regular web app executing on a server, then the Authorization Code Flow is the flow you should use. Using this the Client can retrieve an Access Token and, optionally, a Refresh Token. 
+
+It's considered the safest choice since the Access Token is passed directly to the web server hosting the Client, without going through the user's web browser and risking exposure.
+
+
 
 
 
