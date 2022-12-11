@@ -99,9 +99,23 @@ It is therefore imperative that the Client is absolutely trusted with this infor
 
 **Is the Client a web app executing on the server?**
 
-If the Client is a regular web app executing on a server, then the Authorization Code Flow is the flow you should use. Using this the Client can retrieve an Access Token and, optionally, a Refresh Token. 
+If the Client is a regular web app executing on a server, then the **Authorization Code Flow** is the flow you should use. Using this the Client can retrieve an Access Token and, optionally, a Refresh Token. 
 
 It's considered the safest choice since the Access Token is passed directly to the web server hosting the Client, without going through the user's web browser and risking exposure.
+
+## OpenID Connect Protocol
+
+#### What is OpenID Connect
+
+OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 framework. It allows third-party applications to verify the identity of the end-user and to obtain basic user profile information. 
+
+OIDC uses JSON web tokens (JWTs), which you can obtain using flows conforming to the OAuth 2.0 specifications
+
+#### OpenID vs. OAuth2
+
+While OAuth 2.0 is about resource access and sharing, OIDC is about user authentication.
+
+Its purpose is to give you one login for multiple sites. Each time you need to log in to a website using OIDC, you are redirected to your OpenID site where you log in, and then taken back to the website.
 
 
 
